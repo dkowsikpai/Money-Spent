@@ -9,6 +9,43 @@
 
 
     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Item" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Price" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.8"
@@ -24,7 +61,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="Total"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/display_cost"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:text="0 Rs" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reset_db_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#E91E4D"
+            android:padding="10dp"
+            android:text="Reset DB"
+            android:textColor="#fff" />
 
         <Button
             android:id="@+id/add_bill"
@@ -35,6 +107,7 @@
             android:padding="10dp"
             android:text="Add Bill"
             android:textColor="#fff" />
+
     </LinearLayout>
 
 </LinearLayout>

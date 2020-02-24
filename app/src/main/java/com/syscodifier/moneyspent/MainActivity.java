@@ -70,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        Toast.makeText(getApplicationContext(), "Please wait... !!!", Toast.LENGTH_LONG).show();
+
 
     }
 }
